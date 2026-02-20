@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>CI/CD Demo</title>
@@ -16,19 +17,23 @@
             height: 100vh;
             text-align: center;
         }
+
         .container {
             background: rgba(0, 0, 0, 0.2);
             padding: 40px;
             border-radius: 12px;
         }
+
         h1 {
             margin-bottom: 10px;
         }
+
         .version {
             margin-top: 20px;
             font-size: 14px;
             opacity: 0.8;
         }
+
         button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -37,13 +42,20 @@
             cursor: pointer;
             font-size: 16px;
         }
+
         button:hover {
             opacity: 0.9;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+           
+        </nav>
         <h1>🚀 CI/CD Pipeline Demo</h1>
         <p>If you can see this page, your deployment worked!</p>
 
@@ -55,17 +67,17 @@
 
         </div>
 
-          <div class="version">
-         fature 2 added  <br>
+        <div class="version">
+            fature 2 added <br>
             by patil: <span id="build-time"></span>
-            
+
         </div>
 
-        
-          <div class="version">
-         fature 2 added  <br>
+
+        <div class="version">
+            fature 2 added <br>
             by patil: <span id="build-time"></span>
-            
+
         </div>
     </div>
 
@@ -79,4 +91,5 @@
             new Date().toLocaleString();
     </script>
 </body>
+
 </html>
