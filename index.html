@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CI/CD Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            border-radius: 12px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .version {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CI/CD Pipeline Demo</h1>
+        <p>If you can see this page, your deployment worked!</p>
+
+        <button onclick="showMessage()">Test Deployment</button>
+
+        <div class="version">
+            Version: 1.0.0 <br>
+            Build: <span id="build-time"></span>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Deployment successful!");
+        }
+
+        // Automatically show build time
+        document.getElementById("build-time").textContent =
+            new Date().toLocaleString();
+    </script>
+</body>
+</html>
